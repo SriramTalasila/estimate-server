@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"></link>
+
+    <title>Estimate Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            /* display: flex; */
+             justify-content: space-between;
+            /*align-items: center; */
+            padding: 20px;
+            background-color: #f2f2f2;
+        }
+
+        .logo img {
+            height: 150px;
+        }
+
+
+
+        .business-info h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .business-info p {
+            margin: 0;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        .customer-info {
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+
+        }
+
+        .report {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .report th,
+        .report td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .report th {
+            background-color: #f2f2f2;
+        }
+
+        tfoot {
+            display: table-row-group;
+        }
+
+        tfoot td {
+            padding: 10px;
+            background-color: #f2f2f2;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        img {
+            width: 150px;
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <div class="w3-row">
+        <div class="w3-half w3-container">
+            <img src="https://project1-demo.talasila.tk/assets/images/Texmo.jpg" alt="Business Logo"></img>
+        </div>
+        <div class="w3-half w3-container">
+            <h3>Sri Venkateswara Building Materials</h3>
+            <p>7-1-25, High School Road,</p>
+            <p>Amalapuram, Andhra Pradesh, India</p>
+            <p>Email: ampcera@gmail.com</p>
+            <p>Contact : 08856 233270, 9347822510</p>
+            <p>GSTIN/UIN: 37ABGFS6587F1ZN</p>
+        </div>
+    </div>
+
+    <!-- <table>
+        <tr>
+            <td>
+                <img src="https://project1-demo.talasila.tk/assets/images/Texmo.jpg" alt="Business Logo"></img>
+            </td>
+            <td>
+
+                <h3>Sri Venkateswara Building Materials</h3>
+                <p>7-1-25, High School Road,</p>
+                <p>Amalapuram, Andhra Pradesh, India</p>
+                <p>Email: ampcera@gmail.com</p>
+                <p>Contact : 08856 233270, 9347822510</p>
+                <p>GSTIN/UIN: 37ABGFS6587F1ZN</p>
+
+            </td>
+        </tr>
+    </table> -->
+</header>
+<div class="customer-info">
+    <p><strong>Customer Name:</strong> John Doe</p>
+    <p><strong>Date:</strong> 02/04/2023</p>
+</div>
+<main>
+    <h2>Estimate Report</h2>
+    <table class="report">
+        <thead>
+        <tr>
+            <th>S.No</th>
+            <th>Product Name</th>
+            <th>Quantity (In units)</th>
+            <th>Price/unit (₹)</th>
+            <th>Extended Price (₹)</th>
+        </tr>
+        </thead>
+        <tbody>
+        {trData}
+
+        </tbody>
+        <tfoot>
+        <tr>
+            <td colspan="3"></td>
+            <td>Total Amount:</td>
+            <td>₹230</td>
+        </tr>
+        <tr>
+            <td colspan="3"></td>
+            <td>Total Discount (%):</td>
+            <td>10%</td>
+        </tr>
+        <tr>
+            <td colspan="3"></td>
+            <td>Total Discount:</td>
+            <td>₹23</td>
+        </tr>
+        <tr>
+            <td colspan="3"></td>
+            <td>Final Price:</td>
+            <td>₹207</td>
+        </tr>
+        </tfoot>
+    </table>
+</main>
+</body>
+
+</html>
