@@ -44,4 +44,9 @@ public class BusinessController {
     public Business.Product getProduct(@PathVariable String businessId, @PathVariable String productId) throws Exception {
         return businessService.getProduct(businessId, productId);
     }
+
+    @GetMapping("/{businessId}/products/{productName}")
+    public Business.Product getProductByProductName(@PathVariable String businessId, @PathVariable String productName) throws Exception {
+        return businessService.getProduct(businessId, productName);
+    }
 }
