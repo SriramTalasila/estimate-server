@@ -44,7 +44,7 @@ public class PDFServiceImpl implements PDFService {
         if (htmlTemplate.isBlank()) {
             try {
                 File resource = new ClassPathResource(
-                        "templates/pdfTemplate.html").getFile();
+                        "templates/pdfTemplatev2.html").getFile();
                 htmlTemplate = new String(
                         Files.readAllBytes(resource.toPath()));
             } catch (IOException e) {
